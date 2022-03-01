@@ -23,6 +23,6 @@ jobs:
       - name: Run new-virtual
         env:
           TEACHER_PAT: ${{secrets.TEACHER_PAT}}
-        run: scripts/new-virtual ${{github.event.inputs.repo_name}}
+        run: script/new-virtual ${{github.event.inputs.repo_name}}
 
       
