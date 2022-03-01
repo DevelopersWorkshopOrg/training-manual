@@ -16,14 +16,14 @@ template_url_ghes="https://$ROOT_URL/$CLASS_ORG/$template_name"
 
 get_initial_repo_name() {
   # Get the repo name
-  read -r -p "What would you like to name the repo? " initial_repo_name
+  initial_repo_name=$1
 
   repo_url="$org_url/$initial_repo_name"
 
   echo "Checking if that repo name is available..."
   if repo_is_reachable "$repo_url"; then
     echo "A repo with that name already exists. Please choose another name."
-    get_initial_repo_name
+    exit 1
   fi
 }
 
