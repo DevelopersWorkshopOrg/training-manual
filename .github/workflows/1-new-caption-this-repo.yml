@@ -23,6 +23,7 @@ jobs:
       - name: Run create-initial-repo
         env:
           TEACHER_PAT: ${{secrets.TEACHER_PAT}}
-        run: script/create-initial-repo ${{github.event.inputs.repo_name}}
+        run: create-initial-repo ${{github.event.inputs.repo_name}}
+        working-directory: script
 
       
