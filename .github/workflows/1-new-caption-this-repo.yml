@@ -20,9 +20,9 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Run new-virtual
+      - name: Run create-initial-repo
         env:
           TEACHER_PAT: ${{secrets.TEACHER_PAT}}
-        run: $GITHUB_WORKSPACE/script/new-virtual ${{github.event.inputs.repo_name}}
+        run: script/create-initial-repo ${{github.event.inputs.repo_name}}
 
       
