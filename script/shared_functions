@@ -3,7 +3,7 @@
 # Shared functions
 
 # shellcheck disable=SC1091
-source "$HOME/.trainingmanualrc"
+source "./.trainingmanualrc"
 
 # shellcheck source=script/ask
 source ./ask
