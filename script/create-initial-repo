@@ -3,7 +3,7 @@
 # Create initial repo
 
 # shellcheck disable=SC1091
-source "$HOME/.trainingmanualrc"
+source "./.trainingmanualrc"
 
 # shellcheck source=script/shared_functions
 source ./shared_functions
