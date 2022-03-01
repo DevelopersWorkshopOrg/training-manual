@@ -21,7 +21,6 @@ jobs:
 
       - name: Install httpie
         run: |
-          apt update
           apt install httpie
       # Runs a single command using the runners shell
       - name: Run create-initial-repo
