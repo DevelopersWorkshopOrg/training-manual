@@ -1,0 +1,4 @@
+export TOKEN_OWNER='petrmo'
+export INSTANCE_URL='api.github.com'
+export ROOT_URL='github.com'
+export CLASS_ORG='DevelopersWorkshopOrg'
